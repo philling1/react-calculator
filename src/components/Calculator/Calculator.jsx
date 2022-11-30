@@ -57,6 +57,30 @@ function Calculator() {
   }
 
   const compute = () => {
+    let result;
+    let prevNumber = parseFloat(previous)
+    let currentNumber = parseFloat(current)
+
+    if(isNaN(prevNumber) || isNaN(currentNumber)) return
+
+    switch(operation) {
+      case '÷':
+        result = prevNumber / currentNumber;
+        break;
+      case 'x':
+        result = prevNumber * currentNumber;
+        break;
+      case '+':
+        result = prevNumber + currentNumber;
+        break;
+      case '-':
+        result = prevNumber - currentNumber;
+        break;
+      default:
+        return
+    }
+
+    return result;
 
   }
 
