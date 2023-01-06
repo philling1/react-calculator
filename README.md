@@ -1,3 +1,24 @@
+# react-calculator
+
+A simple react calculator that performs all the operation that you expect it to perform using just react and some javascript array methods with styled components.
+
+## Project Specifications
+
+- Setup your react project folder using the create-react-app start-up template
+- Add some basic styles in your index.css file for your background and body
+- Setup your base component folder where you will build out the whole caculator which just comprise of two folder, one for your styled component and the other for you calculator component
+- Build up your various styled components by installing `styled-components` using `npm` and :
+  - Creating the main Container Styled component with *css grid system* comprising of 4 columns and 5 rows and justify it to center with other css properties
+  - Building the Screen Styled Components which comprises of 3 screens :
+    - The main screen that holds the two other screens with `display` set to `flex` and `grid-column` to `1/-1` with word-wrap and word- break properties
+    - The Previous screen that holds the number and the operation that was typed earlier
+    - The current screen that holds the current number and the operation that is being typed in
+  - Building the Button Styled Component for the operation and numbers
+- Then start adding functionality to the calculator by : 
+  - Handling the different number Button click using the *react-useState* hook and your `onClick` event handlier
+  - Handling the All Clear and Delete Buttons
+  - Handling the Operation and the Equals Button
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

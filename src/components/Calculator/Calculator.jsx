@@ -17,7 +17,6 @@ function Calculator() {
     if(value === '.' && current.includes('.')) return
 
     setCurrent(current + value)
-    console.log(value)
   }
 
   const handleDelete = () => {
@@ -46,7 +45,7 @@ function Calculator() {
     setOperation(btn.target.getAttribute('data'))
   }
 
-  const getSoln = () => {
+  const equals = () => {
     let value = compute();
     if(value === undefined || value === null) return
     
@@ -107,7 +106,7 @@ function Calculator() {
       <Button data={'-'} onClick={chooseOperation}  operation>-</Button>
       <Button data={'.'} onClick={appendValue} period>.</Button>
       <Button data={'0'} onClick={appendValue}>0</Button>
-      <Button gridSpan={2} onClick={getSoln} equals>=</Button>
+      <Button gridSpan={2} onClick={equals} equals>=</Button>
     </Container>
   )
 }
